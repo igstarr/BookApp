@@ -1,0 +1,12 @@
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.csprojAssemblyReference.cache
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.AssemblyInfoInputs.cache
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.AssemblyInfo.cs
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.csproj.CoreCompileInputs.cache
+C:\IT\BookApp\CoreApp\Biz\bin\Debug\netcoreapp3.1\Biz.deps.json
+C:\IT\BookApp\CoreApp\Biz\bin\Debug\netcoreapp3.1\Biz.dll
+C:\IT\BookApp\CoreApp\Biz\bin\Debug\netcoreapp3.1\Biz.pdb
+C:\IT\BookApp\CoreApp\Biz\bin\Debug\netcoreapp3.1\DAL.dll
+C:\IT\BookApp\CoreApp\Biz\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.csproj.CopyComplete
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.dll
+C:\IT\BookApp\CoreApp\Biz\obj\Debug\netcoreapp3.1\Biz.pdb
