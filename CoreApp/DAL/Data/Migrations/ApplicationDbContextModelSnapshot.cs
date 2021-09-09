@@ -27,6 +27,7 @@ namespace CoreApp.DAL.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -41,14 +42,15 @@ namespace CoreApp.DAL.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("FinishedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<byte[]>("CoverImageData")
+                        .HasColumnType("varbinary(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("CoverImageTitle")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("StartedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

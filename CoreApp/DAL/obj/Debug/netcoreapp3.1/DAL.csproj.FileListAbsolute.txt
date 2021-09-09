@@ -1,4 +1,3 @@
-C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
 C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
 C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
 C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
@@ -7,3 +6,5 @@ C:\IT\BookApp\CoreApp\DAL\bin\Debug\netcoreapp3.1\DAL.dll
 C:\IT\BookApp\CoreApp\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
 C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\IT\BookApp\CoreApp\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache

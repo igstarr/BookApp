@@ -1,20 +1,18 @@
 using Biz.Interface;
 using Biz.Logic;
+using Biz.Models;
 using CoreApp.DAL.Data;
+using GenericServices.Setup;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCore.AutoRegisterDi;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace CoreApp
 {
@@ -38,8 +36,18 @@ namespace CoreApp
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-            services.AddScoped<IBooks, Books>();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            //services.AddScoped<IBookService, BookService>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+            var assembliesToScan = new[] {
+            Assembly.GetExecutingAssembly(),
+        Assembly.GetAssembly(typeof(IBookService))   };
+            var results = services.RegisterAssemblyPublicNonGenericClasses(assembliesToScan)
+                .Where(c => c.Name.EndsWith("Service"))  //optional
+                .AsPublicImplementedInterfaces();
+
+            services.GenericServicesSimpleSetup<ApplicationDbContext>(Assembly.GetAssembly(typeof(BookDTO)));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
