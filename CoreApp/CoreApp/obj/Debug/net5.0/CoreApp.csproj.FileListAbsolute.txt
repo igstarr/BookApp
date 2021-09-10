@@ -97,3 +97,4 @@ C:\IT\BookApp\CoreApp\CoreApp\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dl
 C:\IT\BookApp\CoreApp\CoreApp\obj\Debug\net5.0\CoreApp.csproj.AssemblyReference.cache
 C:\IT\BookApp\CoreApp\CoreApp\bin\Debug\net5.0\NetCore.AutoRegisterDi.dll
 C:\IT\BookApp\CoreApp\CoreApp\obj\Debug\net5.0\Razor\Views\Home\SeedBooks.cshtml.g.cs
+C:\IT\BookApp\CoreApp\CoreApp\obj\Debug\net5.0\Razor\Views\Shared\Components\Paging\Default.cshtml.g.cs

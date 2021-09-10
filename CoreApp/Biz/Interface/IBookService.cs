@@ -12,5 +12,6 @@ namespace Biz.Interface
     {
         IQueryable<BookDTO> GetBooks(SortFilterPageOptions options);
         Task<bool> SeedBooks();
+        IQueryable<BookDTO> GetBooksTotalCount(SortFilterPageOptions options);
     }
 }

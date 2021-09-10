@@ -27,7 +27,7 @@ using CoreApp.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"53a9db4f2bbd91844e62ac80edb6aa67b75f0e2a", @"/Views/Home/SeedBooks.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5d448dee499294c13c1fafdb50dacc42291f5625", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11910ed9309253e4823a7e804330d12a30283516", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_SeedBooks : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

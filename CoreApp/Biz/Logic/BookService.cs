@@ -36,6 +36,14 @@ namespace Biz.Logic
             return booksQuery.Page(options.PageNum - 1,
                     options.PageSize);
         }
+        public IQueryable<BookDTO> GetBooksTotalCount(SortFilterPageOptions options)
+        {
+            var booksQuery = _service.ReadManyNoTracked<BookDTO>();
+
+            options.SetupRestOfDto(booksQuery);
+
+            return booksQuery;
+        }
         public async Task AddBook(BookDTO book)
         {
 

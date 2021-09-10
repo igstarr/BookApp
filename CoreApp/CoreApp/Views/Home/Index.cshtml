@@ -3,19 +3,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*<div class="w-1/2">
-    <div class="flex flex-wrap justify-center">
-    <div class="w-6/12 sm:w-4/12 px-4">
-    <img src="@Model.displayImage" alt="..." class="shadow-lg rounded max-w-full h-auto align-middle border-none" />
-    </div>
-    </div>
-    <div class="flex flex-wrap justify-center">
-    <div class="w-6/12 sm:w-4/12 px-4">
-    <img src="@Model.displayImage" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
-    </div>
-    </div>
-    </div>*@
-<div></div>
 <div class="flex flex-wrap justify-center">
     <div>
         <div>
@@ -26,33 +13,7 @@
                 }
             </ol>
         </div>
-        <div>
-            <p>
-                @for (var i = 1; i <= Model.SortFilterPageData.NumPages; i++)
-                {
-                    var filter = Model.SortFilterPageData.PrevCheckState + "/" + 1;
-                    if (i == Model.SortFilterPageData.PageNum)
-                    {
-                        <div>
-                            <b>@i </b>
-                        </div>
-                    }
-
-                    else
-                    {
-                        <div>
-                            <form>
-                                <input type="hidden" name="FilterValue" value="@Model.SortFilterPageData.FilterValue"></input>
-                                <input type="hidden" name="PageSize" value="@Model.SortFilterPageData.PageSize"></input>
-                                <input type="hidden" name="PageNum" value="@i"></input>
-                                <input type="hidden" name="PrevCheckState" value="@Model.SortFilterPageData.PrevCheckState"></input>
-                                <a href="#" hx-post="/Home/UpdateIndex" hx-target="body">@i </a>
-                            </form>
-                        </div>
-                    }
-                }
-            </p>
-        </div>
     </div>
 </div>
-<div></div>
+
+<vc:paging sort-filter-page-data="Model.SortFilterPageData"></vc:paging>
