@@ -32,6 +32,7 @@ namespace Biz.Logic
             var booksQuery = _service.ReadManyNoTracked<BookDTO>();
 
             options.SetupRestOfDto(booksQuery);
+            booksQuery = booksQuery.OrderBy(x => x.Name);
 
             return booksQuery.Page(options.PageNum - 1,
                     options.PageSize);
@@ -39,7 +40,7 @@ namespace Biz.Logic
         public IQueryable<BookDTO> GetBooksTotalCount(SortFilterPageOptions options)
         {
             var booksQuery = _service.ReadManyNoTracked<BookDTO>();
-
+            booksQuery = booksQuery.OrderBy(x => x.Name);
             options.SetupRestOfDto(booksQuery);
 
             return booksQuery;
